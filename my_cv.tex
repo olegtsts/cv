@@ -5,7 +5,7 @@
 \usepackage{multicol}
 \firstname{Oleg}
 \familyname{Tsarkov}
-\mobile{+7 (916) 474-23-20}
+\mobile{+41 (78) 722-43-60}
 \newcommand{\myurl}[1]{\color{blue}\url{#1}\color{black}}
 \email{olegtsts@gmail.com}
 
@@ -18,16 +18,18 @@
 
 
 \section{Work experience}
-\cventry{May 2018 -- now}{Google Switzerland}{Software engineer}{Google Shopping, Bidding Team}{}{
+\cventry{May 2018 -- now}{Google Switzerland}{Senior Software engineer}{Google Shopping, Bidding Team}{}{
 	\begin{itemize}
-		\item Working on cutting edge bidding solutions, which account for significant chunk of Google Shopping revenue.
-		\item Understanding Google bidding solusions, reading a lot of source code with no initial knowledge of how they work.
-		\item Detected several major bugs in the implementation, fixes of which statistically significantly improved the quality of traffic.
-		\item Implemented new bidding strategies and solutions, which did not exist in Google Shopping before.
-		\item Working on using Recurrent Neural Networks for session-based optimizations.
+		\item Working on cutting edge bidding solutions, which account for a significant chunk of Google Shopping revenue.
+		\item Detected several major bugs in autobidding implementation, fixes of which statistically significantly improved the quality of traffic \textbf{(+5\% CVR uplift on eCPC)}.
+		\item Implemented new bidding strategies and solutions, which did not exist in Google Shopping before (eCPC for Value, Coop, target ROAS improvements).
+		\item Used Recurrent Neural Networks for session-based optimizations, \textbf{brought AUC-PR up by 20\%} (TFX based modeling).
+		\item Improving user trust by implementing bidding strategy statuses logic for SSC campaigns.
+		\item Helped facilitating cross org effort to migrate external ad stack (SA360) to Google Ads infra (Amalgam project), which involved \textbf{communicating directly with over 4 teams}, took ownership of pieces outside of the scope of my team
+		\item Occasionally taking and solving complicated Google-wide infra issues. Examples include fixing bug in TF matrices ops which \textbf{brought +8.8\% AUC-PR and -1\% logloss} to TpCVR model which is queried for all Shopping PLA candidates. Another example is fixing googlesql python client when it was breaking in multithreading context under python3, which facilitated py3 migration.
 	\end{itemize}
 }
-\cventry{Aug 2017 -- March 2018}{Yandex}{Team Leader, Senior Software Engineer}{Advertising Services, Autobudget Team}{}{
+\cventry{Aug 2017 -- March 2018}{Yandex}{Team Leader, Senior Software Engineer}{Advertising Services, Autobidding Team}{}{
 	\begin{itemize}
 		\item The main focus is on supporting and improving backend of automatic bidder for Yandex Direct.
 		\item Introducing new ideas and algorithms to be implemented in automatic bidder.
