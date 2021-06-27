@@ -5,7 +5,6 @@
 \usepackage{multicol}
 \firstname{Oleg}
 \familyname{Tsarkov}
-\mobile{+41 (78) 722-43-60}
 \newcommand{\myurl}[1]{\color{blue}\url{#1}\color{black}}
 \email{olegtsts@gmail.com}
 
@@ -18,15 +17,24 @@
 
 
 \section{Work experience}
-\cventry{May 2018 -- now}{Google Switzerland}{Senior Software engineer}{Google Shopping, Bidding Team}{}{
+\cventry{May 2021 -- now}{Google LLC}{Senior Software engineer, Tech Lead}{Proxybidder Team}{}{
+	\begin{itemize}
+		\item Claimed the ownership of Shopping Bidding, which was previously supported by 12 engineers.
+		\item Leading the team of \textbf{3 people}, managing OKRs aimed at accomodating external team requests and also at improving quality and infrastructure for Shopping Bidding solutions.
+		\item Migrating Shopping Bidding solutions on top of central Gooble Bidding stack, fully owning the migration design. One of the strategies which serves \textbf{500 customers} was successfully migrated without any disruptions.
+		\item Coming up with quality initiatives which is expected to bring up \textbf{bidding quality by 4\%} for the target ROAS bidding strategy.
+		\item Managing resource usage for central Bidding stack at Google.
+	\end{itemize}
+}
+\cventry{May 2018 -- May 2021}{Google Switzerland}{Senior Software engineer}{Shopping Bidding Team}{}{
 	\begin{itemize}
 		\item Working on cutting edge bidding solutions, which account for a significant chunk of Google Shopping revenue.
-		\item Detected several major bugs in autobidding implementation, fixes of which statistically significantly improved the quality of traffic \textbf{(+5\% CVR uplift on eCPC)}.
-		\item Implemented new bidding strategies and solutions, which did not exist in Google Shopping before (eCPC for Value, Coop, target ROAS improvements).
-		\item Used Recurrent Neural Networks for session-based optimizations, \textbf{brought AUC-PR up by 20\%} (TFX based modeling).
-		\item Improving user trust by implementing bidding strategy statuses logic for SSC campaigns.
+		\item Detected several major bugs in autobidding implementation, fixes of which statistically significantly improved the quality of traffic \textbf{(+5\% CVR uplift on enhanced CPC bidding strategy)}.
+		\item Implemented new bidding strategies and solutions, which did not exist in Google Shopping before (enhanced CPC for Value, Cooperative bidding, target ROAS improvements).
+		\item Used Recurrent Neural Networks for session-based optimizations, \textbf{brought AUC-PR up by 20\%} for a TFX based model.
+		\item Improving user trust by implementing bidding strategy statuses logic for Smart Shopping campaigns.
 		\item Helped facilitating cross org effort to migrate external ad stack (SA360) to Google Ads infra (Amalgam project), which involved \textbf{communicating directly with over 4 teams}, took ownership of pieces outside of the scope of my team
-		\item Occasionally taking and solving complicated Google-wide infra issues. Examples include fixing bug in TF matrices ops which \textbf{brought +8.8\% AUC-PR and -1\% logloss} to TpCVR model which is queried for all Shopping PLA candidates. Another example is fixing googlesql python client when it was breaking in multithreading context under python3, which facilitated py3 migration.
+		\item Occasionally taking and solving complicated Google-wide infra issues. Examples include fixing bug in TensorFlow matrices operations which \textbf{brought +8.8\% AUC-PR and -1\% logloss} to one of the core models used in ads auction for all the Shopping traffic. Another example is fixing googlesql python client when it was breaking in multithreading context under python3, which facilitated company-wide python3 migration.
 	\end{itemize}
 }
 \cventry{Aug 2017 -- March 2018}{Yandex}{Team Leader, Senior Software Engineer}{Advertising Services, Autobidding Team}{}{
@@ -72,8 +80,6 @@
 \cventry{May 2015}{Journal of Mathematical Sciences}{Extension of Endomorphisms of the Subsemigroup $GE_2+(R)$ to Endomorphisms of $GE_2+(R[x])$, Where R is a Partially-Ordered Commutative Ring Without Zero Divisors}{Volume 206, Issue 6, pp 711-733 \myurl{https://link.springer.com/article/10.1007\%2Fs10958-015-2348-y}}{}{}
 \cventry{Sep 2014}{Journal of Mathematical Sciences}{Endomorphisms of the Semigroup $G_2(R)$ Over Partially Ordered Commutative Rings Without Zero Divisors and with 1/2}{Volume 201, Issue 4, pp 534-551 \myurl{https://link.springer.com/article/10.1007/s10958-014-2010-0} }{}{}
 \cventry{2013}{Fundamental and Applicable Mathematics}{Extension of endomorphisms of the semigroup ${\mathrm{GE}}_2+(R)$ to endomorphisms of ${\mathrm{GE}}_2+(R[x])$ for the lattice-ordered commutative ring $R$ with a unit and without zero divisors.}{no. 4, pp 155-184 \myurl{http://www.ams.org/mathscinet-getitem?mr=3431839}}{}{}
-
-\newpage
 
 \section{Projects}
 \cventry{2017 -- now}{RAST -- a highly distributed database}{}{\myurl{https://github.com/olegtsts/RAST}, \myurl{https://github.com/olegtsts/parallel_programming}}{}{
