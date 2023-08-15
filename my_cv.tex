@@ -17,13 +17,19 @@
 
 
 \section{Work experience}
-\cventry{May 2021 -- now}{Google LLC}{Senior Software engineer, Tech Lead}{Proxybidder Team}{}{
+\cventry{May 2021 -- now}{Google LLC}{TL, L6}{Ads Proxybidder Team}{}{
 	\begin{itemize}
-		\item Claimed the ownership of Shopping Bidding, which was previously supported by 12 engineers.
-		\item Leading the team of \textbf{2 people}, managing OKRs aimed at accomodating external team requests and also at improving quality and infrastructure for Shopping Bidding solutions.
-		\item Led effort to optimize bidding behavior for budget restricted customers, which \textbf{increased spend and bidding quality by +3\%}.
-		\item Designed and implemented cold start improvements for one of the core bidding algorithms, which serves on \textbf{45\% of Shopping Ads traffic}, resulting in \textbf{30\% of small customers starting to have traffic}. Also, simultameously, the effort ended up being an overall \textbf{quality positive update, +0.3\%}. Due to the nature of the problem, the hardest part was to avoid a quality decrease.
-		\item Migrated Shopping Bidding solutions on top of central Gooble Bidding stack, fully owning the migration design. One of the strategies which serves \textbf{500 customers} was successfully migrated without any disruptions. Another ongoing initiative involves bidding strategy which is active on \textbf{45\% of the Shopping Ads traffic}.
+		\item Maintained Shopping Bidding products knowledge transfer to the new team.
+		\item Migrated some of the Shopping Bidding solutions to Proxybidder Bid stack, fully owning the migration design.
+		\item TLing a sub-team of 5 people. The sub-team is responsible for monitoring, automated analytics and customer experience. Doing OKR planning for the team, including accommodating external requests. Facilitating growth of L3 folks in the team.
+		\item Defining a roadmap for Bidding Factorized Model improvements for both Search and Shopping channels.
+		\item Proposing automated tooling to triage customer escalations. Agreeing with management that building out this tool made sense as a proper time investment. The tool has modular and extensible design. The tool was implemented for pMax and Shopping campaigns, and there are plans to onboard more campaign types.
+		\item Integrating internal Bidding data with Ads Health internal debugging UI used by gTech as first responders to customer escalations.
+		\item Improving monitoring infrastructure for Bidding alerts in collaboration with the Smart Alerting team. Establishing semi-automated proactive threshold adjustment processes. Creating debugging tools for the first responders on Bidding alerts.
+		\item Building experiment analysis system for pMax in collaboration with channel bidder teams. Working on automated analytics solutions for quick response on pMax outages.
+		\item Working on Metabidding solutions to facilitate migrations of different campaign types to pMax, collaborating with GDA, Search and Shopping teams.
+		\item Leading effort to optimize bidding behavior for budget restricted customers, which \textbf{increased spend and bidding quality by +3\%}.
+		\item Designing and implementing cold start improvements for one of the core bidding algorithms, which serves on \textbf{45\% of Shopping Ads traffic}, resulting in \textbf{30\% of small customers starting to have traffic}.
 	\end{itemize}
 }
 \cventry{May 2018 -- May 2021}{Google Switzerland}{Senior Software engineer}{Shopping Bidding Team}{}{
@@ -37,35 +43,23 @@
 		\item Occasionally taking and solving complicated Google-wide infra issues. Examples include fixing bug in TensorFlow matrices operations which \textbf{brought +8.8\% AUC-PR and -1\% logloss} to one of the core models used in ads auction for all the Shopping traffic. Another example is fixing googlesql python client when it was breaking in multithreading context under python3, which facilitated company-wide python3 migration.
 	\end{itemize}
 }
-\cventry{Aug 2017 -- March 2018}{Yandex}{Team Leader, Senior Software Engineer}{Advertising Services, Autobidding Team}{}{
+\cventry{Jun 2015 -- March 2018}{Yandex}{TLM}{Advertising Services, Autobidding Team}{}{
 	\begin{itemize}
-		\item The main focus is on supporting and improving backend of automatic bidder for Yandex Direct.
-		\item Introducing new ideas and algorithms to be implemented in automatic bidder.
-		\item Managing an organized work of the team.
+		\item Yandex is a search engine, Google's main competitor on the Russian market. Yandex has achieved more than 50\% share in search engine usage (compared with Google, Bing, and other search engines) among Russian audience due to better interpretability capabilities for Russian language. It's one of the largest tech companies in Russia.
+		\item I was managing a team of 5 people.
+		\item Being responsible for building new and improving existing Autobidding solutions for Yandex Direct.
+		\item Working with PMs to on customer feedback about Autobidding products, categorizing issues and coming up with roadmap for improvements.
+		\item Collaborating with other Ads backend teams whenever a bidding product required changes in API, data collection and processing, real time logic modifications, etc.
 	\end{itemize}
 }
-\cventry{Jul 2016 -- Aug 2017}{Yandex}{Senior Software Engineer}{Advertising Services, Projects Management Team}{}{
+\cventry{Jul 2012 -- Jun 2015}{Yandex}{Software Engineer}{Advertising Services, Fraud Detection}{}{
 	\begin{itemize}
-		\item Help in coordination of department-spread projects.
-	\end{itemize}
-}
-\cventry{Jun 2015 -- Jul 2016}{Yandex}{Software Engineer}{Advertising Services, Projects Management Team}{}{
-	\begin{itemize}
-		\item The main task was to support automatic advertisement bidder, available for Yandex Direct users.
-		\item Managing related projects in other teams.
-	\end{itemize}
-}
-\cventry{Sep 2012 -- Jun 2015}{Yandex}{Software Engineer}{Advertising Services, Algorithms of Fraud Detection}{}{
-	\begin{itemize}
-		\item Developing new fraud traffic filtration algorithms.
-		\item Developing automatic Anomalies Detection system, which is able to notify users on anomalies in advertisement traffic.
-		\item Integrating Anomalies Detection system with Anomalies Analyzer system, that is, anomalies in advertisement traffic, which are found by Anomalies Detection system, are passed to be analyzed to Anomalies Analyzer service.
-	\end{itemize}
-}
-\cventry{Jul 2012 -- Sep 2012}{Yandex}{Software Engineer Intern}{Advertising Services}{}{
-	\begin{itemize}
-		\item Developing of backend of eventually consistent consensus system.
-		\item Developing of Anomalies Analyzer service, which helps to find the reasoning slice of anomalies in advertisement traffic.
+		\item Performing complex data analysis over users data and Yandex Ads Partner Network's data to determine fraudulent activities and automated ways to catch them
+		\item Developing automatic Alerting system for Yandex Ads. I've joined Yandex early when there were no established systems for data monitoring in Ads. I was designing the system from scratch, collected requirements from multiple Ads teams, and have worked with a group of 3-4 engineers to build it out.
+		\item Designing and implementing Anomalies Analyzer system. The system was capable of performing deep automated analysis of outages and fraud complaints by slicing the logs data using a predefined set of slices and a set of data analysis algorithms. The system was designed in a modular, extensible way, it was possible to plug in multiple automated analytics procedures. I have designed some of the automated analytics modules myself, while designing some others according to data scientists feedback.
+		\item I integrated the Anomalies Analyzer system with our Alerting system. Anomalies in advertisement traffic were automatically investigated by automation before a human person takes a look. In most cases the automated system was capable of producing good quality results, e.g. identifying ip addresses from fraud complaints and auto-adding them to ban list as part of custom post-processing.
+		\item Developing the backend of an eventually consistent consensus system for Ads backend. The system worked similar to RAFT, but was designed for offline usage, on top of MySQL, for executing MySQL queries synchronously with eventual consistency guarantees..
+		\item Developing word2vec recommendation models for Ads on Yandex Partner Network.
 	\end{itemize}
 }
 
