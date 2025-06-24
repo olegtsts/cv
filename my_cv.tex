@@ -17,7 +17,19 @@
 
 
 \section{Work experience}
-\cventry{May 2021 -- now}{Google LLC}{TL, L6}{Ads Proxybidder Team}{}{
+\cventry{Oct 2023 -- now}{Google LLC}{Eng Manager}{Persistent Disk}{}{
+	\begin{itemize}
+		\item Persistent Disk is a core Google Cloud product that provides attachable block devices (disks) for all Virtual Machines in Cloud. I am leading an infra team that has been building a new generation stack (Agents stack) for serving low latency and high throughput demand workloads. Our latency on a 4k block size workload is an impressive \textbf{400 microseconds at P50}.
+		\item The team has successfully built and released Hyperdisk Balanced and Hyperdisk Extreme products on Agents stack, and has achieved several scalability milestones of 10k devices per cell and subsequently \textbf{50k devices per cell}. Achieving these scalability milestones involved establishing flows in the team to drive continuous performance investigations and protective identification of improvements in the system, such as mutex contention, low level networking issues, kernel issues, Borg issues, hardware limitations.
+		\item Another significant achievement in the team is meeting our \textbf{5 nine availability SLO target} for the first time in a while in 2024. The definition of SLO is P100 (absolute maximum) latency is less than 2 seconds at least 99.999\% of time. Previously SLO was tracking 4 nines, and I had to schedule, drive and launch profound infrastructure improvements to drive it to 5 nines. One of the improvements was introducing a heuristic based cross shard failover mechanic that hasn't existed in the system. Implementation of this project alone had a 6 month timeline and was delivered on time.
+		\item I've put several critical initiatives (that started before I joined the team) back on track, including Throttling features for the Control Plane layer of the system and Flow Control for the Data Plane. These features increased the resilience of the system, preventing OOM failures.
+		\item I've utilized chiplet-aware scheduling in Agents layer of Persistent Disk that has led to us being able to use arcadia-milan machines that were considered unusable / highly unfavourable earlier due to performance implications. These machines are a significant fraction of fleet in Google today, therefore this update has made it easier for the Agents layer of the system to secure resources in Shared Borg.
+		\item My team has built a pipeline for Persistent Disk to perform stress testing in collaboration with Cloud Networking Engprod org. The testing has reached \textbf{35M IOPS} and has helped us to identify performance bottlenecks. One year later, Cloud Networking org decided that they want to reuse resources of this setup for their needs only, as it was their resources. This had a negative impact on our ability to test intense workloads in Persistent Disk. I've navigated this complex change in collaboration with multiple teams in Persistent Disk org, and we have built an alternative stress testing flow as a result. The new flow has been successfully used to quality a new Hyperdisk ML product.
+		\item I'm raising the bar of our team's production oncall rotation by performing deep performance investigations and presenting them to large audiences. I've built processes to monitor the oncall load and reduce the noise in the rotation to keep the team focused on important issues while not being overloaded.
+		\item In terms of people management, I've been successfully driving and facilitating promo cases for different levels in the team, L3 $\rightarrow$ L4, L4 $\rightarrow$ L5, L5 $\rightarrow$ L6. I've ensured proper balance and fairness when proposing year-end ratings, all proposed ratings both on higher and lower end were accepted at the local org's committee level, meaning they were in alignment with TLs in the org, and made sense to engineers in my team when communicated. My approach to Hiring new talent has been rigorous, prioritizing finding the right talent for the team under pressure to close on the Hiring sooner.
+	\end{itemize}
+}
+\cventry{May 2021 -- Oct 2023}{Google LLC}{TL}{Ads Proxybidder Team}{}{
 	\begin{itemize}
 		\item Maintained Shopping Bidding products knowledge transfer to the new team.
 		\item Migrated some of the Shopping Bidding solutions to Proxybidder Bid stack, fully owning the migration design.
@@ -43,7 +55,7 @@
 		\item Occasionally taking and solving complicated Google-wide infra issues. Examples include fixing bug in TensorFlow matrices operations which \textbf{brought +8.8\% AUC-PR and -1\% logloss} to one of the core models used in ads auction for all the Shopping traffic. Another example is fixing googlesql python client when it was breaking in multithreading context under python3, which facilitated company-wide python3 migration.
 	\end{itemize}
 }
-\cventry{Jun 2015 -- March 2018}{Yandex}{TLM}{Advertising Services, Autobidding Team}{}{
+\cventry{Jun 2015 -- March 2018}{Yandex}{Eng Manager}{Advertising Services, Autobidding Team}{}{
 	\begin{itemize}
 		\item Yandex is a search engine, Google's main competitor on the Russian market. Yandex has achieved more than 50\% share in search engine usage (compared with Google, Bing, and other search engines) among Russian audience due to better interpretability capabilities for Russian language. It's one of the largest tech companies in Russia.
 		\item I was managing a team of 5 people.
